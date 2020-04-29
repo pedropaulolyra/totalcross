@@ -9,7 +9,7 @@ SKIADIR = /skia
 endif
 
 ifndef LIBS
-LIBS = -L. -lskia -lstdc++ -lpthread -lEGL -lfontconfig -lSDL2main -lSDL2
+LIBS = -L. -lskia -lstdc++ -lpthread -lEGL -lfontconfig -lSDL2main -lSDL2 -lffi
 endif
 
 SKIA_INC=$(addprefix -I,$(wildcard $(SKIADIR)/*))
@@ -303,8 +303,11 @@ GPIO_FILES = 								\
 	${SRCDIR}/nm/io/device/gpiod/Gpiod.c      \
 	${SRCDIR}/nm/io/device/gpiod/posix/gpiodLib.c
 
+NATIVE_INTERFACE_FILES =					\
+	${SRCDIR}/nm/tcni/tcni.c
 
-SRC += $(UTIL_FILES) $(MINIZIP_FILES) $(ZLIB_FILES) $(RAS_FILES) $(NM_CRYPTO_FILES) $(NM_IO_FILES) $(NM_LANG_FILES) $(NM_NET_FILES) $(NM_PHONE_FILES) $(NM_MAP_FILES) $(AXTLS_FILES) $(NM_PIM_FILES) $(NM_SYS_FILES) $(NM_UI_FILES) $(NM_UTIL_FILES) $(NM_UTIL_ZIP_FILES) $(NM_XML_FILES) $(PALMDB_FILES)  $(JPEG_FILES) $(PNG_FILES) $(EVENT_FILES) $(SQLITE3_FILES) $(VM_FILES) $(INIT_FILES) $(QRCODE_FILES) $(GPIO_FILES)
+
+SRC += $(UTIL_FILES) $(MINIZIP_FILES) $(ZLIB_FILES) $(RAS_FILES) $(NM_CRYPTO_FILES) $(NM_IO_FILES) $(NM_LANG_FILES) $(NM_NET_FILES) $(NM_PHONE_FILES) $(NM_MAP_FILES) $(AXTLS_FILES) $(NM_PIM_FILES) $(NM_SYS_FILES) $(NM_UI_FILES) $(NM_UTIL_FILES) $(NM_UTIL_ZIP_FILES) $(NM_XML_FILES) $(PALMDB_FILES)  $(JPEG_FILES) $(PNG_FILES) $(EVENT_FILES) $(SQLITE3_FILES) $(VM_FILES) $(INIT_FILES) $(QRCODE_FILES) $(GPIO_FILES) $(NATIVE_INTERFACE_FILES)
 
 OBJ = $(patsubst $(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC))
 CXX_OBJECTS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(CXX_SOURCES))

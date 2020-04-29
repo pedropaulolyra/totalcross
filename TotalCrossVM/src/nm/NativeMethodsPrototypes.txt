@@ -64,6 +64,7 @@ TC_API void jlrF_setLong_ol(NMParams p);
 TC_API void jlrF_setFloat_od(NMParams p);
 TC_API void jlrF_setDouble_od(NMParams p);
 TC_API void jlR_exec_SSs(NMParams p);
+TC_API void jlR_loadLibrary_s(NMParams p);
 TC_API void jncFCI_read(NMParams p);
 TC_API void jncFCI_read_Bii(NMParams p);
 TC_API void jncFCI_write_Bii(NMParams p);
@@ -267,6 +268,7 @@ TC_API void tpcbIPOIC_newTask(NMParams p);
 TC_API void tpcbIPOIC_getITaskString_s(NMParams p);
 TC_API void tpcbIPOIC_removeITask_s(NMParams p);
 TC_API void tpcbIPOIC_editITask_ssssssssssss(NMParams p);
+TC_API void tnT_invokeMethod_ssO(NMParams p);
 TC_API void tnsSSL_dispose(NMParams p);
 TC_API void tnsSSL_handshakeStatus(NMParams p);
 TC_API void tnsSSL_getCipherId(NMParams p);
@@ -794,6 +796,10 @@ TC_API void jlrF_setFloat_od(NMParams p) // java/lang/reflect/Field public nativ
 }
 //////////////////////////////////////////////////////////////////////////
 TC_API void jlrF_setDouble_od(NMParams p) // java/lang/reflect/Field public native void setDouble(Object obj, double d) throws IllegalArgumentException, IllegalAccessException;
+{
+}
+//////////////////////////////////////////////////////////////////////////
+TC_API void jlR_loadLibrary_s(NMParams p) // java/lang/Runtime public native void loadlibrary(String libname);
 {
 }
 //////////////////////////////////////////////////////////////////////////
@@ -1594,6 +1600,10 @@ TC_API void tpcbIPOIC_removeITask_s(NMParams p) // totalcross/pim/ce/builtin/IPO
 }
 //////////////////////////////////////////////////////////////////////////
 TC_API void tpcbIPOIC_editITask_ssssssssssss(NMParams p) // totalcross/pim/ce/builtin/IPOutlookItemCollection native public static int editITask(String restriction, String subject, String categories, String startDate, String dueDate, String importance, String complete, String isRecurring, String duration, String recurrenceType, String occurrences, String interval, String dayOfWeek, String dayOfMonth, String weekOfMonth, String monthOfYear, String patternStartDate, String patternEndDate, String startTime, String endTime, String noEndDate, String sensitivity, String teamTask, String reminderIsSet, String reminderOptions, String reminderTime, String note);
+{
+}
+//////////////////////////////////////////////////////////////////////////
+TC_API void tnT_invokeMethod(NMParams p) // totalcross/native/TCNI native public static Object invokeMehotd (String moduleName, String methodName, Object ... params);
 {
 }
 //////////////////////////////////////////////////////////////////////////
