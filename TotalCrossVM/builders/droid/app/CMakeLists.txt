@@ -241,6 +241,8 @@ set(SOURCES
 
     ${TC_SRCDIR}/nm/io/device/gpiod/Gpiod.c
 
+    ${TC_SRCDIR}/nm/tcni/tcni.c
+
     ${LB_SRCDIR}/lbFile.c
     ${LB_SRCDIR}/PlainDB.c
     ${LB_SRCDIR}/TCVMLib.c

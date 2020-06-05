@@ -464,6 +464,8 @@
 		0F2B1F9822E10A1600E1878D /* qrcode_generation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrcode_generation.c; sourceTree = "<group>"; };
 		0F3E7180224EB6BB006D51AF /* Locale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Locale.c; sourceTree = "<group>"; };
 		0F3E7184224EB6D7006D51AF /* Locale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locale.m; sourceTree = "<group>"; };
+		0F4FF5292489808C008EDFEB /* tcni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcni.c; sourceTree = "<group>"; };
+		0F4FF52B2489808C008EDFEB /* tcni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcni.h; sourceTree = "<group>"; };
 		0F7318BC1513DCFB001EE647 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0F7CBA091552CCB100E9BD43 /* nativeProcAddressesTC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nativeProcAddressesTC.c; sourceTree = "<group>"; };
 		0F7CBA0A1552CCB100E9BD43 /* nativeProcAddressesTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nativeProcAddressesTC.h; sourceTree = "<group>"; };
@@ -2264,6 +2266,7 @@
 				0F8C8DA41549CFC700E0967F /* palmdb_c.h in Headers */,
 				0F8C8DA51549CFC700E0967F /* palmdb_c.h in Headers */,
 				0F8C8DA61549CFC700E0967F /* palmdb_c.h in Headers */,
+				0F4FF52F2489808C008EDFEB /* tcni.h in Headers */,
 				0F8C8DC11549CFC700E0967F /* png.h in Headers */,
 				0F8C8DC21549CFC700E0967F /* pngconf.h in Headers */,
 				0F8C8DE01549CFC700E0967F /* context.h in Headers */,
@@ -2385,6 +2388,7 @@
 				0F8C8C651549CFC700E0967F /* md2.c in Sources */,
 				0F8C8C661549CFC700E0967F /* md5.c in Sources */,
 				0F8C8C671549CFC700E0967F /* openssl.c in Sources */,
+				0F4FF52D2489808C008EDFEB /* tcni.c in Sources */,
 				0F8C8C681549CFC700E0967F /* os_port.c in Sources */,
 				0F8C8C6A1549CFC700E0967F /* p12.c in Sources */,
 				0F8C8C6C1549CFC700E0967F /* rc4.c in Sources */,
