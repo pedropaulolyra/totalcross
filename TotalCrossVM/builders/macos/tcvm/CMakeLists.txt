@@ -328,7 +328,7 @@ include_directories(${SKIA_DIR}/private)
 include_directories(${SKIA_DIR}/svg)
 include_directories(${SKIA_DIR}/utils)
 
-add_definitions(-DTOTALCROSS -DTC_EXPORTS -DPOSIX -Dlinux -DHEADLESS)
+add_definitions(-DTOTALCROSS -DTC_EXPORTS -DPOSIX -Dlinux -DHEADLESS -DHAVE_MREMAP=0 -fPIC -Wunused-function -Wno-import -fno-strict-aliasing)
 
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake")
