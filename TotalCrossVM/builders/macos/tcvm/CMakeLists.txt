@@ -121,8 +121,6 @@ set(SOURCES
 
     ${TC_SRCDIR}/nm/pim/POutlook.c
 
-    ${TC_SRCDIR}/nm/money/money.c
-    
     ${TC_SRCDIR}/nm/notification/notification.c
     
     ${TC_SRCDIR}/nm/phone/Dial.c
@@ -232,6 +230,10 @@ set(SOURCES
 
     ${TC_SRCDIR}/sqlite/sqlite3.c
     ${TC_SRCDIR}/nm/db/NativeDB.c
+
+    ${TC_SRCDIR}/scanner/ios/ios_barcode.c
+
+    ${TC_SRCDIR}/nm/cielo/printer/PrinterManager.c
 
     ${TC_SRCDIR}/nm/qrcode/qrcode_generation.c
     ${TC_SRCDIR}/nm/qrcode/qrcode.c
