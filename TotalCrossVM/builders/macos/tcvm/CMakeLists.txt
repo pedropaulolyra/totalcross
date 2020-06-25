@@ -343,3 +343,13 @@ add_library(tcvm SHARED ${SOURCES})
 
 target_link_libraries(tcvm ${SDL2_LIBRARY})
 target_link_libraries(tcvm skia)
+
+
+
+
+set(TC_SRCDIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../src")
+
+include_directories(${TC_SRCDIR}/util)
+
+# add the executable
+add_executable(Launcher ${TC_SRCDIR}/launchers/linux/Launcher.c)
