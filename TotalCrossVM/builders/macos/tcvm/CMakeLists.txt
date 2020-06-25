@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.4.1)
 # set the project name
 project(TCVM VERSION 1.0)
 
-SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -Wno-everything -std=c11")
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-everything -std=c++11")
+SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -Wno-everything -std=c11 -mmacosx-version-min=10.11")
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-everything -std=c++11 -mmacosx-version-min=10.11")
 
 
 set(TC_SRCDIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../src")
