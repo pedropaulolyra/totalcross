@@ -243,7 +243,7 @@ EXP_FUNC int STDCALL getdomainname(char *buf, int buf_size);
 #define TTY_FLUSH()
 
 #ifndef be64toh
- #ifdef darwin
+ #ifdef __APPLE__
   #define be64toh(x) ntohll(x)
  #else
   #define be64toh(x) __be64_to_cpu(x)
