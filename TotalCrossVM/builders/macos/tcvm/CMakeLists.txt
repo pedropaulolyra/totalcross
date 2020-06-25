@@ -330,6 +330,9 @@ include_directories(${SKIA_DIR}/utils)
 
 add_definitions(-DTOTALCROSS -DTC_EXPORTS -DPOSIX -Dlinux -DHEADLESS -DHAVE_MREMAP=0 -fPIC -Wunused-function -Wno-import -fno-strict-aliasing)
 
+IF (APPLE AND CMAKE_BUILD_TYPE MATCHES "Debug")
+  add_definitions(-DCURRENT_DEBUG_PATH="${CMAKE_CURRENT_BINARY_DIR}")
+ENDIF(APPLE AND CMAKE_BUILD_TYPE MATCHES "Debug")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake")
 find_package(SDL2 REQUIRED)
