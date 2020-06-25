@@ -335,9 +335,11 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIR})
 
+link_directories(${PROJECT_SOURCE_DIR})
+
 
 # add the library
 add_library(tcvm SHARED ${SOURCES})
-# add_library(libskia SHARED IMPORTED)
 
 target_link_libraries(tcvm ${SDL2_LIBRARY})
+target_link_libraries(tcvm skia)
